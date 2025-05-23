@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: #131821;
+  height: 40px;
+}
+
+.nav_link {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+ul {
+  list-style-type: none;
+  font-family: math sans bold italic;
+  color: white;
+}
+
+#getstarted {
+
+  margin: 10px 10px 12px 150px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* SECTION 1 CSS*/
+.section1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #f7f9fa;
+  height: 310px;
+
+}
+
+.car_img {
+  height: 222px;
+  width: 383px;
+  margin-top: -20px;
+  filter: drop-shadow(19px 16px 21px rgba(0, 0, 0, 0.481));
+}
+
+.header {
+
+  margin-right: 170px;
+}
+
+#carinfo {
+  margin-top: 25px;
+}
+
+#btn {
+  margin-top: 23px;
+  height: 36px;
+  width: 114px;
+  background-color: black;
+  color: white;
+  border-radius: 9px;
+}
+
+/* SECTION 2 CSS*/
+h2 {
+  margin: 10px 0px 0px 65px;
+}
+
+.section2 {
+  height: 138px;
+  background-color: #fcfeff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.box1 {
+  height: 111px;
+  width: 260px;
+  margin: 14px;
+  padding: 21px;
+  border: 1px solid black;
+  border-radius: 5px;
+  /*box-shadow: 2px 0px 10px black;*/
+}
+
+.box1 p {
+  padding: 10px;
+  font-size: larger;
+  font-family: math;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 768px) {
+  .nav_link {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  #getstarted {
+    margin: 0;
+  }
+
+  .section1 {
+    flex-direction: column-reverse;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .header {
+    margin: 0;
+  }
+
+  .car_img {
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+  }
+
+  .car_img img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+
+  .section2 {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .box1 {
+    width: 90%;
+    max-width: 300px;
+    margin: 10px auto;
+  }
+
+  h2 {
+    margin: 20px;
+    text-align: center;
+  }
+}
+
+/* Car Collection */
+
+.section3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+}
+
+.car-box {
+  background-color: white;
+  height: 350px;
+  width: 30%;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  border: 1.5px solid rgba(0, 0, 0, 0.567);
+  border-radius: 5px;
+}
+
+.box-img {
+  height: 250px;
+  background-size: cover;
+  object-position: center;
+  border-radius: 5px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+.box-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+
+.price {
+  margin: 11px 0px 7px 19px;
+  font-weight:bolder;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 23px;
+}
+
+.price-btn {
+  text-align: center;
+  background-color: white;
+  border: 1.5px black;
+  padding: 10px 18px 11px 16px;
+  border-radius: 8px;
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+
+.main-btn {
+  text-align: center;
+}
+
+.partner-text {
+  text-align: center;
+  margin: 23px 175px 28px 102px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.partner-logo {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1px 186px 5px 186px;
+  cursor: pointer;
+}
+
+.footer {
+  background-color: #131821;
+  color: white;
+  padding: 30px 20px 10px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-container > div {
+  flex: 1;
+  min-width: 220px;
+  margin: 10px;
+}
+
+.footer-container h3,
+.footer-container h4 {
+  margin-bottom: 15px;
+}
+
+.footer-container p,
+.footer-container a {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.footer-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-container a {
+  text-decoration: none;
+}
+
+.footer-container a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid #444;
+  margin-top: 20px;
+  font-size: 13px;
+}
